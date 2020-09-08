@@ -24,7 +24,7 @@ class SongsTableSeeder extends Seeder
                     'Blues', 'Rock', 'Metal', 'Soul', 'Funk', 'Rap', 'Jazz',
                     'Disco', 'Triphop', 'New Wave', 'Indie'
                 ]);
-                $new_song->artista_id = $j + 1;
+                $new_song->record_id = $j + 1;
                 
                 $new_song->save();
             }

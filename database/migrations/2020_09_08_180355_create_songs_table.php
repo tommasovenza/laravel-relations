@@ -17,8 +17,11 @@ class CreateSongsTable extends Migration
             $table->id();
             $table->string('titolo_canzone');
             $table->string('genere');
-            $table->integer('artista_id');
+            $table->unsignedBigInteger('record_id');
             $table->timestamps();
+            $table->foreign('record_id')
+                ->references('id')
+                ->on('records');
         });
     }
 

@@ -20,9 +20,6 @@ class CreateRecordsTable extends Migration
             $table->integer('anno');
             $table->integer('numero_brani');
             $table->text('descrizione');
-            $table->unsignedBigInteger('artista_id')
-                ->references('id')
-                ->on('artista');
             $table->timestamps();
         });
     }
