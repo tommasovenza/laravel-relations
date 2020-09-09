@@ -10,8 +10,9 @@
     <li> Numero brani presenti {{$record->numero_brani}}</li>
     <li> Descrizione: {{$record->descrizione}}</li>
 
-    <br>
-
+    <a href="{{ route('record.show', $record) }}">Vedi dettaglio disco</a>
+   
+    
     @endforeach
 
 </ul>
