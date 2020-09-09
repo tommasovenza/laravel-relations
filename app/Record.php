@@ -13,7 +13,7 @@ class Record extends Model
         'numero_brani',
         'descrizione',
     ];
-
+    
     public function songs() {
         return $this->hasMany('App\Song');
     }
