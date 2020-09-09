@@ -14,8 +14,7 @@ class SongsTableSeeder extends Seeder
     public function run(Faker $faker)
     {
         
-        for ($i=0; $i < 10; $i++) { 
-            for ($j=0; $j < 10; $j++) { 
+            for ($i=0; $i < 30; $i++) { 
                 
                 $new_song = new Song(); 
 
@@ -24,11 +23,11 @@ class SongsTableSeeder extends Seeder
                     'Blues', 'Rock', 'Metal', 'Soul', 'Funk', 'Rap', 'Jazz',
                     'Disco', 'Triphop', 'New Wave', 'Indie'
                 ]);
-                $new_song->record_id = $i + 1;
+                $new_song->record_id = $faker->numberBetween(1, 10);
                 
                 $new_song->save();
 
             }
-        }
+        
     }
 }
