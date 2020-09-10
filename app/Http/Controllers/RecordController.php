@@ -16,8 +16,8 @@ class RecordController extends Controller
     {   
 
         $records = Record::all();
-
-        return view('record.index', compact('records'));
+        dd($records[1]->image->url); 
+        // return view('records.index', compact('records'));
     }
 
     /**
@@ -52,7 +52,7 @@ class RecordController extends Controller
 
         $record = Record::find($id);
 
-        return view('record.show', compact('record'));
+        return view('records.show', compact('record'));
     }
 
     /**

@@ -21,3 +21,4 @@ class ImagesTableSeeder extends Seeder
         }
     }
 }
+ 

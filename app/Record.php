@@ -17,4 +17,8 @@ class Record extends Model
     public function songs() {
         return $this->hasMany('App\Song');
     }
+
+    public function image() {
+        return $this->hasOne('App\Image');
+    }
 }
