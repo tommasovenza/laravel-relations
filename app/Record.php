@@ -21,4 +21,4 @@ class Record extends Model
     public function image() {
         return $this->hasOne('App\Image');
     }
-}
+} 
